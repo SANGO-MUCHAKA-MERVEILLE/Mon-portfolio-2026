@@ -1,13 +1,128 @@
 :root{
-    --violet-doux:#6c63ff;
-    --violet-fonce: #534EDD;
+    --violet-doux: #6c63ff;
+    --violet-foncé: #534EDD;
     --orange-vif: #FFA726;
-    --gris-tres-fonce: #333;
-    --gris-fonce: #666;
-    --gris-tres-clair: #F8F8F8;
-    --gris-clair: #EEE;
+    --gris-tres-foncé: #333;
+    --gris-foncé: #666;
+    --gris-tres-claire: #f8f8f8;
+    --gris-claire: #EEE;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    color: var(--violet-fonce);
+header ul{
+    justify-self: flex-end;
+    display: flex;
+}
+header{
+    background-color: #fafaea; 
+    padding-right: 30px; 
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    box-shadow: 2px 5PX 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    align-items: center;
+    padding: 2rem 3rem;
+    
+
+}
+header a.titre{
+    color: var(--violet-doux);
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 24px;
+    font-family: Roboto black;
+}
+
+.list li {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: system-ui,'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    list-style: none;
+    margin-top: -10px;
+    padding-right: 30px;
+}
+.list li a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+.list li a:hover{
+    color:#7d0c00;
+}
+.list li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 5px;
+    background-color: #FFD001;
+    transition: width 0.3s ease;
+    border-radius: 5px;
+    
+}
+.list li a:hover::after{
+    width: 100%;    
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 10rem 2rem;
+}
+
+.hero img{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--violet-doux);
+    object-fit: cover;
+    height: 200px;
+    }
+
+.hero h1{
+    color: var(--violet-doux);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1,2rem;
+    font-family: roboto;
+
+}
+.hero p{
+    color: var(--gris-foncé);
+    font-size: 1,3rem;
+    margin-bottom: 1,2rem;
+    font-family: roboto;
+}
+
+.hero a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3 ease, transform 0.2s ease;
+    font-family: roboto;
+}
+
+.hero a:hover{
+    background-color: var(--violet-foncé);
+    transform: translateY(-3px);
+
 }
