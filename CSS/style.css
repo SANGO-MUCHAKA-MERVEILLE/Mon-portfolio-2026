@@ -80,6 +80,7 @@ header a.titre{
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    text-align: center;
     margin: 10rem 2rem;
 }
 
@@ -124,5 +125,39 @@ header a.titre{
 .hero a:hover{
     background-color: var(--violet-foncé);
     transform: translateY(-3px);
+
+}
+.apropos{
+    width: 800px;
+    margin: 6rem auto;
+    text-align: center;
+}
+
+section h2{
+    color: var(--violet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    font-family: roboto ;
+    position: relative;
+    text-align: center;
+}
+
+section h2::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--violet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+    text-align: center;
+    
+}
+
+.apropos p{
+    margin-bottom: 2rem;
+    color: var(--gris-foncé);
+    font-size: 1.3rem;
+    font-family: roboto;
 
 }
