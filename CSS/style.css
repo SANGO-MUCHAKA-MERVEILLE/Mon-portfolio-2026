@@ -721,3 +721,203 @@ section h1::after{
         padding: 25px;
     }
 }
+
+
+/* ===== PAGE PASSIONS ===== */
+
+.passion-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.passion-hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.passion-hero h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: var(--violet-doux);
+}
+
+.passion-intro {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.passions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.passion-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.passion-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.passion-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.passion-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.passion-card:hover .passion-image img {
+    transform: scale(1.1);
+}
+
+.passion-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.passion-icon {
+    font-size: 3em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.passion-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.passion-content p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .passion-hero h1 {
+        font-size: 2em;
+    }
+    
+    .passions-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .passion-image {
+        height: 200px;
+    }
+}
+
+
+/* ===== PAGE DIVERTISSEMENTS ===== */
+
+.divertissement-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.divertissement-hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.divertissement-hero h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.divertissement-intro {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.divertissements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.divertissement-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.divertissement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.divertissement-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.divertissement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.divertissement-card:hover .divertissement-image img {
+    transform: scale(1.1);
+}
+
+.divertissement-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.divertissement-icon {
+    font-size: 2.8em;
+    color: #e74c3c;
+    margin-bottom: 18px;
+}
+
+.divertissement-content h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.divertissement-content p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .divertissement-hero h1 {
+        font-size: 2em;
+    }
+    
+    .divertissements-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .divertissement-image {
+        height: 180px;
+    }
+}
